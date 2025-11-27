@@ -167,7 +167,7 @@ ul#navigation li:hover{
     background-color: var(--display-dark);
 }
 @media (max-width: 500px) {
-    #etch-a-sketch{
+        #etch-a-sketch{
     width: 90vw;
 }
     .toy-name{
@@ -189,6 +189,25 @@ ul#navigation li:hover{
 
 }
 @media (orientation: portrait) {
+        #etch-a-sketch{
+    width: 90vw;
+}
+    .toy-name{
+    font-size: 3vw;
+}
+    h1{
+        font-size: 5vw;
+    }
+
+    #grid-container{
+    min-height: 70vw;
+    margin-top: -70vw;
+}
+.grid-container-shadow{
+    min-height: 70vw;
+}
+
+
     ul#navigation{
     position: inherit;
     flex-direction: row;
