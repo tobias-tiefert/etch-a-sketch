@@ -115,6 +115,14 @@ ul#navigation li:hover{
     min-height: 51vh;
     background-color: var(--display-light);
     border-radius: 1.75rem;
+    overflow: hidden;
+    margin-top: -51vh;
+}
+.grid-container-shadow{
+    min-height: 51vh;
+    background-color: transparent;
+    border-radius: 1.75rem;
+    overflow: hidden;
     box-shadow: 0 4px 9px 1px #EB3132,
                 inset 6px 4px 6px 0 rgba(0,0,0,0.25),
                 inset -5px 4px 4px 0 rgba(0,0,0,0.25),
@@ -122,9 +130,13 @@ ul#navigation li:hover{
                 0 0 30px 4px rgba(0,0,0,0.25),
                 inset -12px 4px 24px 0 rgba(0,0,0,0.25),
                 inset 15px 7px 24px 0 rgba(0,0,0,0.25);
+    position: relative;
+    top: 0;
+    left: 0;
 }
 .grid-container-arround{
     padding: 0 4.5vh 1vh;
+    
 }
 .controll{
     max-width: 5rem;
@@ -143,4 +155,14 @@ ul#navigation li:hover{
     display: flex;
     justify-content: space-between;
     margin: 1rem 3rem 2rem;
+}
+.screen-default{
+    width: 100px;
+    height: 100px;
+    background-color: var(--display-light);
+}
+.screen-drawn{
+    width: 100px;
+    height: 100px;
+    background-color: var(--display-dark);
 }
