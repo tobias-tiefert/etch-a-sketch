@@ -24,7 +24,7 @@ body{
     background-size: cover;
 }
 .shadow{
-    min-width: 100vh;
+    min-width: 100vw;
     min-height: 100vh;
     box-shadow: inset 0 0  100px 60px rgba(0,0,0,0.3);
     display: flex;
@@ -140,7 +140,7 @@ ul#navigation li:hover{
 }
 .controll{
     max-width: 5rem;
-    max-width: 5rem;
+    max-height: 5rem;
     width: 8vh;
     height: 8vh;
     background-color: var(--weiss);
@@ -165,4 +165,40 @@ ul#navigation li:hover{
     width: 100px;
     height: 100px;
     background-color: var(--display-dark);
+}
+@media (max-width: 500px) {
+    #etch-a-sketch{
+    width: 90vw;
+}
+    .toy-name{
+    font-size: 3vw;
+}
+    h1{
+        font-size: 5vw;
+    }
+
+    #grid-container{
+    min-height: 70vw;
+    margin-top: -70vw;
+}
+.grid-container-shadow{
+    min-height: 70vw;
+}
+
+
+
+}
+@media (orientation: portrait) {
+    ul#navigation{
+    position: inherit;
+    flex-direction: row;
+    order: 2;
+}
+    #etch-a-sketch{
+    order: 1;
+}
+.shadow{
+    flex-direction: column;
+    gap: 3rem   ;
+}
 }
