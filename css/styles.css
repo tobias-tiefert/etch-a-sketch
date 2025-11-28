@@ -30,6 +30,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2rem 0 3rem ;
+    
     
 }
 
@@ -56,9 +58,7 @@ h2{
     align-items: baseline;
     padding: 0 1rem;
 }
-#etch-a-sketch{
-    background-color: var(--rot);
-}
+
 .toy-name{
     font-family: "Pacifico", cursive;
     font-weight: 400;
@@ -81,6 +81,10 @@ h2{
                 inset -5px 11px 24px 0 rgba(0,0,0,0.25),
                 0 24px 34px 0 rgba(0,0,0,0.14),
                 0 24px 20px -15px rgba(0,0,0,0.3);
+    background-color: var(--rot);
+    display: flex;
+    flex-direction: column;
+    ;
 }
 ul#navigation{
     margin: 0;
@@ -112,14 +116,21 @@ ul#navigation li:hover{
     cursor: pointer;
 }
 #grid-container{
-    min-height: 51vh;
+    height: 51vh;
+    width: 51vh;
     background-color: var(--display-light);
     border-radius: 1.75rem;
     overflow: hidden;
+    
     margin-top: -51vh;
+    
+    display: flex;
+    flex-wrap: wrap;
 }
+
 .grid-container-shadow{
-    min-height: 51vh;
+    height: 51vh;
+    width: 51vh;
     background-color: transparent;
     border-radius: 1.75rem;
     overflow: hidden;
@@ -133,9 +144,12 @@ ul#navigation li:hover{
     position: relative;
     top: 0;
     left: 0;
+    pointer-events: none;
 }
 .grid-container-arround{
     padding: 0 4.5vh 1vh;
+    margin: 0 auto;
+
     
 }
 .controll{
@@ -157,13 +171,9 @@ ul#navigation li:hover{
     margin: 1rem 3rem 2rem;
 }
 .screen-default{
-    width: 100px;
-    height: 100px;
     background-color: var(--display-light);
 }
 .screen-drawn{
-    width: 100px;
-    height: 100px;
     background-color: var(--display-dark);
 }
 @media (max-width: 500px) {
@@ -178,13 +188,14 @@ ul#navigation li:hover{
     }
 
     #grid-container{
-    min-height: 70vw;
+    height: 70vw;
+    width: 70vw;
     margin-top: -70vw;
 }
 .grid-container-shadow{
-    min-height: 70vw;
+    height: 70vw;
+    width: 70vw;
 }
-
 
 
 }
@@ -200,11 +211,13 @@ ul#navigation li:hover{
     }
 
     #grid-container{
-    min-height: 70vw;
+    height: 70vw;
+    width: 70vw;
     margin-top: -70vw;
 }
 .grid-container-shadow{
-    min-height: 70vw;
+    height: 70vw;
+    width: 70vw;
 }
 
 
